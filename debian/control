@@ -1,0 +1,36 @@
+Source: golang-google-protobuf
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Alex David <flu0r1ne@flu0r1ne.net>
+Section: devel
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper-compat (= 12),
+               dh-golang,
+               golang-any,
+               golang-github-google-go-cmp-dev
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-google-protobuf
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-google-protobuf.git
+Homepage: https://github.com/protocolbuffers/protobuf-go
+Rules-Requires-Root: no
+XS-Go-Import-Path: google.golang.org/protobuf
+
+Package: golang-google-protobuf-dev
+Architecture: all
+Depends: golang-github-google-go-cmp-dev,
+         ${misc:Depends}
+Description: Go support for Google's protocol buffers (library)
+ Go support for Protocol Buffers Go Reference
+ (https://pkg.go.dev/google.golang.org/protobuf) Build Status
+ (https://travis-ci.org/protocolbuffers/protobuf-go)
+ .
+ This project hosts the Go implementation for protocol buffers
+ (https://developers.google.com/protocol-buffers), which is a
+ language-neutral, platform-neutral, extensible mechanism for serializing
+ structured data. The protocol buffer language is a language for specifying
+ the schema for structured data. This schema is compiled into language
+ specific bindings. This project provides both a tool to generate Go code
+ for the protocol buffer language, and also the runtime implementation to
+ handle serialization of messages in Go. See the protocol buffer developer
+ guide (https://developers.google.com/protocol-buffers/docs/overview)
+ for more information about protocol buffers themselves.

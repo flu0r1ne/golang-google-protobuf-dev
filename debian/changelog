@@ -1,0 +1,5 @@
+golang-google-protobuf (1.27.1-1) UNRELEASED; urgency=medium
+
+  * Initial release (Closes: TODO)
+
+ -- Alex David <flu0r1ne@flu0r1ne.net>  Wed, 30 Jun 2021 21:42:30 -0500

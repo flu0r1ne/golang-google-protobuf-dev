@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+export DH_GOLANG_EXCLUDES := internal/benchmarks/*
+export DH_GOLANG_INSTALL_ALL := 1
+
+%:
+	dh $@ --builddirectory=_build --buildsystem=golang --with=golang
+
+# Don't install compiler libs -- maintained by another package
+override_dh_auto_install:
+	dh_auto_install -- --no-binaries
